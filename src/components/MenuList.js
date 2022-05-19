@@ -1,13 +1,17 @@
-import  React,{useState} from 'react';
+import React, { useState } from 'react';
 import Cards from "./Cards"
 import ItemForm from "./ItemForm"
 
 
- function MenuList() {
+function MenuList() {
 
     const [items, setItems] = useState([
 
     ]);
+
+    function handleAddItem(newItem) {
+        setItems([...items, newItem]);
+    }
 
 
     // // Add useEffect hook
@@ -18,15 +22,15 @@ import ItemForm from "./ItemForm"
     //   }, []);
 
     const CardsItems = items.map((q) => (
-        <Cards item={q} />))
-  return (
-      <div>
-          <ItemForm/>
-          {CardsItems}
+        <Cards item={q} key={q.name} />))
+    return (
+        <div>
+            <ItemForm handleAddItem={handleAddItem} />
+            {CardsItems}
 
-      </div>
-      
-    
-  );
+        </div>
+
+
+    );
 }
 export default MenuList

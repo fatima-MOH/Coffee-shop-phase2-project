@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route,Router } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import ItemForm from "./ItemForm";
@@ -12,7 +12,7 @@ function App() {
     return (
         <div>
             <NavBar />
-            
+            <Router>
                 <Route path="/ItemForm">
                     <ItemForm/>
                 </Route>
@@ -25,6 +25,7 @@ function App() {
                 <Route path="*">
                     <h1>404 not found</h1>
                 </Route>
+                </Router>
             
         </div>
     );

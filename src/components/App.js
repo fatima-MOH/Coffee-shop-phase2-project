@@ -13,13 +13,13 @@ function App() {
         <div>
             <NavBar />
             
-                <Route path="/about">
+                <Route path="/ItemForm">
                     <ItemForm/>
                 </Route>
-                <Route path="/projects">
+                <Route path="/Menulist">
                     <MenuList />
                 </Route>
-                <Route exact path="/">
+                <Route path="/">
                     <Home />
                 </Route>
                 <Route path="*">

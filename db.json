@@ -1,0 +1,52 @@
+{
+  "coffies": [
+    {
+      "name": "latte ",
+      "image": "https://www.aluxurytravelblog.com/wp-content/uploads/2017/05/2-Latte.jpg",
+      "description": " made with steamed milk and two shots of espresso",
+      "price": "4.99$",
+      "isInCart": false,
+      "id": 1
+    },
+    {
+      "name": "Cinnamon Dolce Latte ",
+      "image": "https://copykat.com/wp-content/uploads/2022/04/Starbucks-Cinnamon-Dolce-Latte-Pin-1.jpg",
+      "description": " made with cinnamon dolce syrup and topped with whipped cream and a cinnamon dolce topping.",
+      "price": "6.99$",
+      "isInCart": false,
+      "id": 2
+    },
+    {
+      "name": "Caffe Mocha",
+      "image": "https://www.butteredsideupblog.com/wp-content/uploads/2021/04/How-to-Make-a-Mocha-Latte-65.jpg.webp",
+      "description": "regular latte with chocolatey mocha sauce and sweet whipped cream",
+      "price": "7.99$",
+      "isInCart": false,
+      "id": 3
+    },
+    {
+      "name": "Black coffee",
+      "image": "https://somedayilllearn.com/wp-content/uploads/2020/05/cup-of-black-coffee-scaled-720x405.jpeg",
+      "description": " brewed coffee without the addition of additives such as sugar, milk, cream, or added flavors",
+      "price": "4.99$",
+      "isInCart": false,
+      "id": 4
+    },
+    {
+      "name": "espresso",
+      "image": "https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630",
+      "description": "made from the same beans as coffee but is stronger, thicker, and higher in caffeine",
+      "price": "5.99$",
+      "isInCart": false,
+      "id": 5
+    },
+    {
+      "name": "",
+      "image": "",
+      "description": "",
+      "price": "$",
+      "isInCart": false,
+      "id": 6
+    }
+  ]
+}

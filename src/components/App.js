@@ -7,11 +7,11 @@ import ItemForm from "./ItemForm";
 import MenuList from "./MenuList";
 
 function App() {
-    const [page, setPage] = useState("/")
+   
     
     return (
         <div>
-            <NavBar onChangePage={setPage} />
+            <NavBar />
             
                 <Route path="/about">
                     <ItemForm/>

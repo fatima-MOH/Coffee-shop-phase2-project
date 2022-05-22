@@ -48,3 +48,11 @@
 
             <button type="submit">Add to List</button>
         </form>
+
+
+
+        <nav>
+            <NavLink excat to href="/">Home</NavLink>
+            <NavLink excat to href="/ItemForm">ItemForm</NavLink>
+            <NavLink excat to href="/MenuList">MenuList</NavLink>
+        </nav>

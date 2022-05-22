@@ -1,15 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
 
-function NavBar() {
+
+function NavBar({onChangePage}) {
+    function handleLinkClick(e) {
+        e.preventDefault()
+        onChangePage(e.target.pathname)
+    }
    
     
     return (
         <nav>
-            <NavLink excat to href="/">Home</NavLink>
-            <NavLink excat to href="/ItemForm">ItemForm</NavLink>
-            <NavLink excat to href="/MenuList">MenuList</NavLink>
+            <a onClick={handleLinkClick} href="/">Home</a>
+            <a onClick={handleLinkClick} href="/MenuList">Menulist</a>
+            <a onClick={handleLinkClick} href="/ItemForm">ItemForm</a>
         </nav>
+        
     );
 }
 

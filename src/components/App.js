@@ -1,5 +1,6 @@
 
 import React,{useEffect, useState} from "react";
+import{Switch,Route} from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import ItemForm from "./ItemForm";
@@ -43,18 +44,7 @@ function App() {
 
 
     
-    function getCurrentPage() {
-        switch(page) {
-            case "/":
-                return <Home />
-            case "/MenuList":
-                return <MenuList  handleDeleteItem={handleDeleteItem} items={items}/>
-            case "/ItemForm":
-                return <ItemForm handleAddItem={handleAddItem}/>
-            default:
-                return <h1>404 not found</h1>
-        }
-    }
+    
     
    
     
@@ -62,7 +52,20 @@ function App() {
         
            <div>
     <NavBar onChangePage={setPage} />
-    {getCurrentPage()}
+    <Switch>
+        <Route path="/Home">
+            <Home />
+        </Route>
+
+        <Route path="/MenuList"   handleDeleteItem={handleDeleteItem} items={items}>
+            <MenuList />
+        </Route>
+        <Route path="/ItemForm">
+            <ItemForm  handleAddItem={handleAddItem} />
+        </Route>
+
+    </Switch>
+    
 </div>
 );
 }

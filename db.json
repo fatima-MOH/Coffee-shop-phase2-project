@@ -39,14 +39,6 @@
       "price": "5.99$",
       "isInCart": false,
       "id": 5
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "price": "$",
-      "isInCart": false,
-      "id": 6
     }
   ]
 }

@@ -1,6 +1,6 @@
 
-import React,{useEffect, useState} from "react";
-import{Switch,Route} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import ItemForm from "./ItemForm";
@@ -12,29 +12,29 @@ function App() {
     const [items, setItems] = useState([]);
     console.log(items);
 
-    
-// Add useEffect hook
+
+    // Add useEffect hook
     useEffect(() => {
         fetch("http://localhost:3001/coffies")
-          .then((r) => r.json())
-          .then((items) => setItems(items));
-      }, []);
+            .then((r) => r.json())
+            .then((items) => setItems(items));
+    }, []);
 
 
-   
-//handleDeleteItem
+
+    //handleDeleteItem
 
     function handleDeleteItem(id) {
         fetch(` http://localhost:3001/coffies/${id}`, {
-      method: "DELETE",
-    })
-      .then((r) => r.json())
-      .then(() => {
-        const updatedQuestions = items.filter((item) => item.id !== id);
-        setItems(updatedQuestions);
-      })
+            method: "DELETE",
+        })
+            .then((r) => r.json())
+            .then(() => {
+                const updatedQuestions = items.filter((item) => item.id !== id);
+                setItems(updatedQuestions);
+            })
 
-        
+
     }
     //handleAddItem
 
@@ -43,33 +43,36 @@ function App() {
     }
 
 
-    
-    
-    
-   
-    
+
+
+
+
+
     return (
-        
-           <div>
-    <NavBar onChangePage={setPage} />
-    <Switch>
-        <Route path="/Home">
-            <Home />
+
+        <div>
+            <NavBar onChangePage={setPage} />
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+
+                <Route path="/MenuList">
+                    <MenuList handleDeleteItem={handleDeleteItem} items={items} />
+                </Route>
+                <Route path="/ItemForm">
+                    <ItemForm handleAddItem={handleAddItem} />
+                </Route>
+                <Route path="*">
+                    <h1>404 not found</h1>
         </Route>
 
-        <Route path="/MenuList"   handleDeleteItem={handleDeleteItem} items={items}>
-            <MenuList />
-        </Route>
-        <Route path="/ItemForm">
-            <ItemForm  handleAddItem={handleAddItem} />
-        </Route>
+            </Switch>
 
-    </Switch>
-    
-</div>
-);
+        </div>
+    );
 }
-            
-            
+
+
 
 export default App;

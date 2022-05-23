@@ -43,6 +43,18 @@ function App() {
     }
 
 
+    function handleUpdateItem(updatedItem) {
+        const updatedItems = items.map((item) => {
+          if (item.id === updatedItem.id) {
+            return updatedItem;
+          } else {
+            return item;
+          }
+        });
+        setItems(updatedItems);
+      }
+
+
 
 
 
@@ -58,7 +70,7 @@ function App() {
                 </Route>
 
                 <Route path="/MenuList">
-                    <MenuList handleDeleteItem={handleDeleteItem} items={items} />
+                    <MenuList handleDeleteItem={handleDeleteItem} items={items} handleUpdateItem={handleUpdateItem}/>
                 </Route>
                 <Route path="/ItemForm">
                     <ItemForm handleAddItem={handleAddItem} />

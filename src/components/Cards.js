@@ -1,36 +1,36 @@
 import React from 'react';
-import {Card,CardActions,CardContent,Button,CardMedia,Typography }from "@material-ui/core";
+import { Card, CardActions, CardContent, Button, CardMedia, Typography } from "@material-ui/core";
 
 
-function Cards({ item , handleDeleteItem,handleUpdateItem }) {
+function Cards({ item, handleDeleteItem, handleUpdateItem }) {
 
-    const{id, description,name,image,price}=item
+    const { id, description, name, image, price } = item
 
 
-function handleDeleteClick() {
-    handleDeleteItem(id)
-  
-  }
+    function handleDeleteClick() {
+        handleDeleteItem(id)
 
-  function handleAddToCartClick() {
-  
-    fetch(`http://localhost:3001/coffies/${item.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        isInCart: !item.isInCart,
-      }),
-    })
-      .then((r) => r.json())
-      .then((updatedItem) => handleUpdateItem(updatedItem));
-  }
+    }
+
+    function handleAddToCartClick() {
+
+        fetch(`http://localhost:3001/coffies/${item.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                isInCart: !item.isInCart,
+            }),
+        })
+            .then((r) => r.json())
+            .then((updatedItem) => handleUpdateItem(updatedItem));
+    }
 
 
     return (
 
-        <Card 
+        <Card
         >
 
 
@@ -44,14 +44,14 @@ function handleDeleteClick() {
                     {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                   {description}
+                    {description}
                 </Typography>
                 <Typography>
-                {price}
+                    {price}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" className={item.isInCart ? "remove" : "add"}  onClick={handleAddToCartClick}>
+                <Button size="small" className={item.isInCart ? "remove" : "add"} onClick={handleAddToCartClick}>
                     {item.isInCart ? "Remove From" : "Add to"}</Button>
                 <Button size="small" onClick={handleDeleteClick}>delete</Button>
             </CardActions>

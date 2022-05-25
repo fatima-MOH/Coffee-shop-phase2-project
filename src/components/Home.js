@@ -9,32 +9,19 @@ const styles = {
         backgroundSize: "contain",
         height: "100vh",
         width: "cover",
-
-
         backgroundSize: "cover",
         backgroundPosition: 'center',
-        
     },
-    title:{
+    title: {
         color: "white",
         fontWeight: 'bold',
-        
-         padding:310,
-         fontStyle: 'italic',
-        
-         marginLeft:400,
-         textDecorationLine: 'underline'
-
-         
+        padding: 310,
+        fontStyle: 'italic',
+        marginLeft: 400,
+        textDecorationLine: 'underline'
 
     }
-
-    
-
-    
 };
-
-
 
 
 function Home() {
@@ -46,9 +33,7 @@ function Home() {
             <div className="homePage" style={styles.container}>
                 <h1 style={styles.title}>
                     welcome to The Friendly Bean
-
                 </h1>
-
             </div>
         </>
 

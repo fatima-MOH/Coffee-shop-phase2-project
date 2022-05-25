@@ -3,11 +3,11 @@ import { Grid } from '@material-ui/core';
 import Cards from "./Cards"
 
 
-function MenuList({ handleDeleteItem ,items,handleUpdateItem }) {
+function MenuList({ handleDeleteItem, items, handleUpdateItem }) {
 
 
   const CardsItems = items.map((q) => <Grid key={q.id} item xs={3}>
-    <Cards item={q} handleDeleteItem={handleDeleteItem} handleUpdateItem={handleUpdateItem}/></Grid>)
+    <Cards item={q} handleDeleteItem={handleDeleteItem} handleUpdateItem={handleUpdateItem} /></Grid>)
   return (
     <div>
 
@@ -16,7 +16,7 @@ function MenuList({ handleDeleteItem ,items,handleUpdateItem }) {
         direction="row"
         justifyContent="flex-start"
         alignItems="flex-start"
-        spacing={3}
+        spacing={2}
       >{CardsItems}</Grid>
 
 

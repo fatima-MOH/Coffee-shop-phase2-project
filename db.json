@@ -39,6 +39,14 @@
       "price": "5.99$",
       "isInCart": false,
       "id": 5
+    },
+    {
+      "name": "Iced Pumpkin Spice Macchiato",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9431483.jpg&w=1200&h=678&c=sc&poi=face&q=60",
+      "description": "½ cup ice cubes, or as needed ½ cup 2% milk  1 ½ tablespoons pumpkin spice syrup (such as Torani®) 1 ½ tablespoons vanilla-flavored syrup (such as Torani®) 2 (1.25 ounce) shots brewed espresso",
+      "price": "4.99$",
+      "isInCart": false,
+      "id": 6
     }
   ]
 }

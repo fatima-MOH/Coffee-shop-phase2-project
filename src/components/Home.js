@@ -17,9 +17,13 @@ const styles = {
     },
     title:{
         color: "white",
-         align: "center",
-         padding:200,
-         marginRight:"100vh"
+        fontWeight: 'bold',
+        
+         padding:310,
+         fontStyle: 'italic',
+        
+         marginLeft:400,
+         textDecorationLine: 'underline'
 
          
 

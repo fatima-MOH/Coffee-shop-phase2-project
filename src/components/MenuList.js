@@ -4,13 +4,16 @@ import Cards from "./Cards"
 
 
 function MenuList({ handleDeleteItem, items, handleUpdateItem }) {
-
-
   const CardsItems = items.map((q) => <Grid key={q.id} item xs={3}>
     <Cards item={q} handleDeleteItem={handleDeleteItem} handleUpdateItem={handleUpdateItem} /></Grid>)
   return (
     <div>
-
+      <div>
+        <h1 style={{
+          fontStyle: 'italic',
+          marginLeft: 900,
+        }}>MENU</h1>
+      </div>
       <Grid
         container
         direction="row"

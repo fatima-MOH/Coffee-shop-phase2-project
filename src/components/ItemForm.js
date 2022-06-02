@@ -34,6 +34,7 @@ function ItemForm({ handleAddItem }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+  
     const itemData = {
       name: name,
       image: image,
@@ -41,6 +42,16 @@ function ItemForm({ handleAddItem }) {
       price: `${price}$`,
       isInCart: false,
     };
+  //clear all input values in the form
+  setName('');
+  SetDescription('');
+  setImage('');
+  setPrice('');
+
+
+ 
+
+
     // console.log("name:", name);
     // console.log("discribtion:", discribtion);
 
@@ -53,6 +64,8 @@ function ItemForm({ handleAddItem }) {
     })
       .then((r) => r.json())
       .then((newItem) => handleAddItem(newItem));
+
+     
   }
 
   const classes = useStyles();

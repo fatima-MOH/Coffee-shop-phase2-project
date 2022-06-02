@@ -7,7 +7,7 @@ import ItemForm from "./ItemForm";
 import MenuList from "./MenuList";
 
 function App() {
-    const [page, setPage] = useState("/")
+   
 
     const [items, setItems] = useState([]);
     console.log(items);
@@ -63,7 +63,7 @@ function App() {
     return (
 
         <div>
-            <NavBar onChangePage={setPage} />
+            <NavBar  />
             <Switch>
                 <Route exact path="/">
                     <Home />

@@ -31,5 +31,31 @@ files and using id/className to style your elements. You can
 also incorporate a UI framework (like React Bootstrap,
 Semantic UI, or Material UI) if you prefer.
 
+### Screenshots: 📷
+
+
+
+
+
+### Technologies Used:  ⚛️
+
+ This project was created with react js, react router Dom, and material Ui for styling.
+
+ ### Setup / Installation:
+
+To make this project work, run the following commands in the terminal simultaneously .
+  
+ # npm run json-server
+ # npm start
+
+
+### Status:
+
+The project is complete so it meets all of the requirements.
+
+
+
+
+
 
 

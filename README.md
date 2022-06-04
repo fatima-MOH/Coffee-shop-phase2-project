@@ -1,6 +1,6 @@
 ### Project Title: 📛
 
-Coffee-shope-phase2- project
+Coffee-shop-phase2- project
 
 ## youtube video Link 🔗
 

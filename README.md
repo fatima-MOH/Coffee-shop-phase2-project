@@ -2,7 +2,11 @@
 
 Coffee-shop-phase2- project
 
-## youtube video Link 🔗
+## Links 🔗
+-Video link :
+https://youtu.be/9h-T5nrxTLs
+-blog link :
+https://dev.to/vatimetouebeke/phase-2-portfolio-project-k63
 
 
 

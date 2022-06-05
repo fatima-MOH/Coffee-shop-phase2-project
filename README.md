@@ -35,7 +35,7 @@ files and using id/className to style your elements. You can
 also incorporate a UI framework (like React Bootstrap,
 Semantic UI, or Material UI) if you prefer.
 
-### Screenshots: 📷
+### gif: 📷
 
 
 

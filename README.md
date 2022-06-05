@@ -40,9 +40,6 @@ Semantic UI, or Material UI) if you prefer.
 
 
 
-https://user-images.githubusercontent.com/95946533/172065799-5cf05e82-cb64-4bc8-869a-59c304276d0d.mp4
-
-
 
 
 

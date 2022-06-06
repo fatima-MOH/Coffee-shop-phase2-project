@@ -44,7 +44,7 @@ Semantic UI, or Material UI) if you prefer.
 
 
 
-### Technologies Used:  ⚛️
+# Technologies Used:  ⚛️
 
  This project was created with react js, react router Dom, and material Ui for styling.
 

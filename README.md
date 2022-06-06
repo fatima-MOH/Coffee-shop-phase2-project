@@ -48,15 +48,15 @@ Semantic UI, or Material UI) if you prefer.
 
  This project was created with react js, react router Dom, and material Ui for styling.
 
- ### Setup / Installation:
+ # Setup / Installation:
 
 To make this project work, run the following commands in the terminal simultaneously .
   
- # npm run json-server
- # npm start
+ ### npm run json-server
+ ### npm start
 
 
-### Status:
+# Status:
 
 The project is complete so it meets all of the requirements.
 
